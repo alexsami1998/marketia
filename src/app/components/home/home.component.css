@@ -1,0 +1,50 @@
+.container {
+   width: 55%;
+   margin: auto auto 3rem auto;
+   padding: 1rem;
+   border-radius: 1rem;
+ }
+ 
+ .full-width {
+   width: 100%;
+ }
+ 
+ h1 {
+  text-align: center;
+ }
+ h2,
+ h3,
+ p {
+  color: rgb(37, 38, 61);
+   text-align: left;
+ }
+ 
+ img {
+   height: 20rem;
+   max-width: 100%;
+   margin-left: -2px;
+ }
+ 
+ 
+ p {
+   margin-top: 3rem;
+   opacity: .5;
+ }
+
+h1 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+table {
+  width: 100%;
+}
+
+mat-form-field {
+  width: 100%;
+}
+
+button {
+  margin-top: .5rem;
+}

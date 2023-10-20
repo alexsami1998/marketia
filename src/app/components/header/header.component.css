@@ -1,0 +1,12 @@
+.mat-toolbar {
+   display: flex;
+   background: linear-gradient(180deg, rgb(71, 132, 175) 0%, rgb(24, 60, 119) 0%, rgb(38, 100, 142) 100%);
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+}
+
+.span{
+   text-align: center;
+   display: flex;
+}

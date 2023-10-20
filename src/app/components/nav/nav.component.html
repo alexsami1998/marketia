@@ -1,0 +1,40 @@
+<mat-drawer-container class="container" autosize>
+   <mat-drawer #drawer class="sidenav" mode="side">
+      <img src="" alt="Imagem de navegação">
+      <mat-nav-list class="nav-list">
+         <a mat-list-item routerLink="principal">
+            <i class="material-icons">home</i>
+            Home
+         </a>
+         <a mat-list-item routerLink="operadores">
+            <i class="material-icons">account_circle</i>
+            Operadores
+         </a>
+         <a mat-list-item routerLink="login" *ngIf="viewLogin">
+            <i class="material-icons">login</i>
+            Login
+         </a>
+         <a mat-list-item routerLink="clientes">
+            <i class="material-icons">person</i>
+            Clientes
+         </a> 
+         <a mat-list-item routerLink="produtosRegister">  
+            <i class="material-icons">support</i>
+            Produtos
+         </a>
+         <a mat-list-item (click)="logout()" *ngIf="isAuthenticated()">
+            <i class="material-icons">logout</i>
+            Logout
+         </a>
+      </mat-nav-list>
+   </mat-drawer>
+
+   <div class="sidenav-content">
+      <app-header></app-header>
+      <button class="menu mat-elevation-z8" (click)="drawer.toggle()" mat-icon-button>
+         <mat-icon>menu</mat-icon>
+      </button>
+      <router-outlet></router-outlet>
+   </div>
+
+</mat-drawer-container>
